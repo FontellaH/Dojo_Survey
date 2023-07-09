@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        *{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #box {
+            padding: 100px;
+            padding-top: 50px;
+            padding-right: 500px;
+            margin: 200px;
+            margin-top: 50px;
+            background-color: lightsalmon;
+            border: 2px solid black;
+            font-size: xx-large;
+        }
+
+        input {
+            border: 2px solid black;
+            font-size: xx-large;
+            font-weight: bolder;
+        }
+
+        select {
+            border: 2px solid black;
+            font-size: xx-large;
+        }
+
+        #comment {
+            border: 2px solid black;
+            width: 900px;
+            height: 300px;
+            margin-right: 50px;
+
+        }
+
+        #submit {
+            margin-left: 890px;
+            background-color: #026b82;
+            color: black;
+        }
+
+        table {
+            margin-left: 50px;
+        }
+
+        h1 {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <form action='/result' method='post'>
+            <p>Your Name:* <input type="text" name="name" /></p>
+            <p>Dojo Location:*
+                <select name="Dojo_Location">
+                    <option value="Texas">Houston, TX</option>
+                    <option value="California">Los Angeles, CA</option>
+                    <option value="Washington">Vancouver, WA</option>
+                    <option value="Oregon">Portland, OR</option>
+                    <option value="Oaklahoma">Tulsa, OK</option>
+                    <option value="Other">Other</option>
+                </select>
+            </p>
+            <p>Favorite <Language:></Language:>
+                <select name="Favorite_Language">
+                    <option value="Python">Python</option>
+                    <option value="Html">Html</option>
+                    <option value="CSS">CSS</option>
+                    <option value="C#">C#</option>
+                    <option value="Java">Java</option>
+                </select>
+            </p>
+            <p>Comment (optional): </p>
+            <textarea type="text" name="comment" id="comment"></textarea><br>
+            <input type='submit' value='submit' id="submit" />
+        </form>
+    </div>
+</body>
+
+</html>
